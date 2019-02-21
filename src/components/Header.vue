@@ -75,7 +75,7 @@
         <div class="search">
           <span>
             <form action="">
-              <input type="text" name="value" class="searchInput">
+              <input type="text" name="value" class="searchInput" placeholder="小绿瓶">
             </form>
           </span>
             <a href="javascript:;">
@@ -115,45 +115,44 @@
             <a href="javascript:;">
               <img src="../../public/img/gnb_quickShopping.gif" alt="">
             </a>
-            
-            <div></div>
+            <!-- List菜单 -->
+            <ul class="totalList">
+              <li>
+                <a href="javascript:;">
+                  <strong>品牌简介</strong>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <strong>济州岛故事</strong>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <strong>购物</strong>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <strong>活动</strong>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <strong>社区</strong>
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- List菜单 -->
-          <ul class="totalList">
-            <li>
-              <a href="javascript:;">
-                <strong>品牌简介</strong>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:;">
-                <strong>济州岛故事</strong>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:;">
-                <strong>购物</strong>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:;">
-                <strong>活动</strong>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:;">
-                <strong>社区</strong>
-              </a>
-            </li>
-          </ul>
+          
           <!-- 快捷登录区域 -->
           <div class="loginArea">
-            <form loginFrm>
+            <form class="loginFrm">
               <span class="loginId">
-                <input type="text" id="id">
+                <input type="text" id="id"  placeholder="   邮箱/手机">
               </span>
               <span class="loginPwd">
-                <input type="password" id="pwd">
+                <input type="password" id="pwd"  placeholder="   密码" >
               </span>
               <span>
                 <a href="javascript:;" class="login" alt="登录">
@@ -189,13 +188,16 @@ export default {
   body{
     background:#fff
   }
+  header{
+    width:100%;
+    height:164
+  }
   #headerMenu {
     margin:0 auto;
     width:980px;
     height:164px;
     position:relative;
   }
-
   #headerMenu li{
     list-style:none;
     float:left;
@@ -215,7 +217,6 @@ export default {
     width:435px;
     height:18px;
     float:right;
-    
   }
   .utilMenu .menu li{
     font-weight:bold;
@@ -234,6 +235,7 @@ export default {
   .utilMenu>.menu li:nth-child(7){
     border-right:0px;
   }
+
 
   /* logo图片 */
   #headerMenu .logo{
@@ -260,15 +262,37 @@ export default {
     padding: 0 10px;
   }
 
+
+  /* 上快捷导航*/
+  .QMTop{
+    margin-left:10px;
+  }
+  .QMTop li a{
+    padding:0 3px;
+  }
+
+
   /* 下快捷导航 */
+  .QMButtom {
+    margin-left:25px;
+  }
   .QMButtom li {
     border-right:1px solid #666666;
+    margin-top:-5px;
   }
   .QMButtom li a{
     font-size:11px;
     color:#666666;
     font-family:"Simsum","宋体","tahoma";
+    width:42px;
+    height:12.8px;
+    padding:0 10px;
   }
+  .QMButtom li:nth-child(4){
+    border: 0px;
+  }
+
+
   /* 搜索框 */
   .quickMenu .search{
     width:400px;
@@ -282,25 +306,76 @@ export default {
   }
   .quickMenu .search input{
     width:260px;
-    margin:5px 35px;
-    border:0px solid #f5f5f5;
-    background:#f5f5f5
+    height:28px;
+    margin:4px 40px;
+    border:0px solid #fff;
+    font-size:12px;
   }
+
+
   /* 探店指南 */
   .headerAd{
     float:right;
     cursor:pointer;
-    margin-top:-50px;
+    margin-top:-60px;
   }
 
+
   /* 快速购物通道 */
-  header .BtotalMenu {
+  .BtotalMenu {
     background:#045321; 
     width:100%;
     height:40px;
+    margin-top:-40px;      
   }
-  .totalList a{
-    color:#000;
-    margin-left:10px;
+  .totalMenu{
+    margin:0 auto;
+    height:40px;
+    width:980px;
+    position: relative;
+  }
+  .totalMenu .quickShopping .totalList{
+    float: left;
+    position: absolute;
+    display:block;
+    clear:both;
+    left:135px;
+    top:8px;
+  }
+  .totalMenu .quickShopping .totalList li{
+    float: left;
+    list-style:none;
+    border-right:1px solid #666666;
+  }
+  .totalMenu .quickShopping .totalList li a{
+    color:#fff;
+    margin:25px;
+  }
+
+
+  /* 登陆账号密码框 */
+  .loginArea{
+    width:290px;
+    position: relative;
+    left:645px;
+    top:-38px;
+  }
+  .loginArea input{
+    width:135px;
+    height:24px;
+    border:none;
+    margin:5px;
+    font-size:12px;
+  }
+  .loginArea span a img{
+    position: absolute;
+    top:3px;
+  }
+
+  /*每日签到*/
+  .totalMenu .checkIN a{
+    position: absolute;
+    left:992px;
+    top:5px;
   }
 </style>
