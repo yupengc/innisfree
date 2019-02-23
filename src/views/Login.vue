@@ -295,7 +295,7 @@ export default {
     left:120px;
     top:-21px;
   }
-  
+   
 
   /*Note界面*/
   .loginPage .loginNote {
