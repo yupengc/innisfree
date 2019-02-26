@@ -139,50 +139,8 @@ export default {
 
 <style>
   
-  *{margin: 0;padding: 0;}
-
-  .container {
-    width:980px;
-    margin: 0 auto;
-    padding:0;
-  }
-  .container a {
-    color:#666666;
-    font-size:12px;
-    font-family: "SimSun","宋体",'tahoma';
-  }
-  .container li {
-    list-style: none;
-  }
-  .sub_wrap footer {
-    margin-top:90px;
-  }
 
 
-  /* 所处区域导航 */
-  .container .locationArea {
-    margin-top:8px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .container .locationArea span {
-    margin:0 2px;
-  }
-  .container .locationArea .home {
-    width:53px;
-    height:17px;
-    display: inline-block;
-    background:url('../../public/img/BG_home.png')no-repeat ;
-    margin-bottom:-3px;
-    margin-right:10px;
-  }
-  .container .locationArea .pathImg {
-    display: inline-block;
-    width:10px;
-    height:5px;
-    background:url('../../public/img/BG_path.gif')no-repeat;
-    margin-bottom: 2px;
-  }
-  
 
   /*左处会员信息栏*/
   .container .memberArea {

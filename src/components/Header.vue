@@ -17,7 +17,7 @@
               </div>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="http://localhost:8080/#/login">
                 <img src="../../public/img/header_util_login.png" alt="">
               </a>
             </li>
@@ -125,8 +125,8 @@
               <!-- List菜单 -->
               <ul class="totalList">
                 <li class="gnb_menu1">
-                  <a href="javascript:;">
-                    <strong>品牌简介</strong>
+                  <a href="javascript:;" class="menu">
+                    <strong></strong>
                   </a>
                   <div class="subMenu1">
                     <ul class="subList">
@@ -138,11 +138,11 @@
                       <img src="../../public/img/gnbMenu1_banner.jpg" alt="">
                     </p>
                   </div>
-                  <img src="../../public/img/bar_1x12_ababab.gif" alt="">
+                  
                 </li>
                 <li class="gnb_menu2"> 
-                  <a href="javascript:;">
-                    <strong>济州岛故事</strong>
+                  <a href="javascript:;" class="menu">
+                    <strong></strong>
                   </a>
                   <div class="subMenu2">
                     <ul class="subList">
@@ -153,11 +153,11 @@
                     <img src="../../public/img/gnbMenu2_banner.jpg" alt="">
                     </p>
                   </div>
-                  <img src="../../public/img/bar_1x12_ababab.gif" alt="">
+                  
                 </li>
                 <li class="gnb_menu3">
-                  <a href="javascript:;">
-                    <strong>购物</strong>
+                  <a href="javascript:;" class="menu">
+                    <strong></strong>
                   </a>
                   <div class="subMenu3">
                     <dl>
@@ -209,11 +209,11 @@
                       <img src="../../public/img/btn_close_x_666666.gif" alt="">
                     </a>
                   </div>
-                  <img src="../../public/img/bar_1x12_ababab.gif" alt="">
+                  
                 </li>
                 <li class="gnb_menu4">
-                  <a href="javascript:;">
-                    <strong>活动</strong>
+                  <a href="javascript:;" class="menu">
+                    <strong></strong>
                   </a>
                   <div class="subMenu4">
                     <ul class="subList">
@@ -226,11 +226,11 @@
                       <img src="../../public/img/gnbMenu4_banner20150327.jpg" alt="">
                     </p>
                   </div>
-                  <img src="../../public/img/bar_1x12_ababab.gif" alt="">
+                  
                 </li>
                 <li class="gnb_menu5">
-                  <a href="javascript:;">
-                    <strong>社区</strong>
+                  <a href="javascript:;" class="menu">
+                    <strong></strong>
                   </a>
                   <div class="subMenu5">
                     <ul class="subList">
@@ -244,7 +244,7 @@
                       <img src="../../public/img/gnbMenu5_banner.jpg" alt="">
                     </p>
                   </div>
-                  <img src="../../public/img/bar_1x12_ababab.gif" alt="">
+                  
                 </li>
               </ul>
             </div>
@@ -305,13 +305,9 @@ export default {
 
 <style>
 
-  *{
-    margin:0;
-    padding:0;
-  }
-  body{
-    background:#fff
-  }
+
+
+
   header{
     width:100%;
     height:164
@@ -341,17 +337,22 @@ export default {
     width:435px;
     height:18px;
     float:right;
+    margin-top:5px;
+  }
+  .utilMenu .menu li a{
+    color:#666666;
   }
   .utilMenu .menu li{
     font-weight:bold;
     font-size:11px;
     color:#666666;
-    border-right:1px solid #666666;
+    background:url('../../public/img/bar_2x10_e9e9e9.gif')no-repeat 0 50% ;
     padding-right:6px;
     padding-left:6px;
   }
   .utilMenu>.menu li:first-child{
     margin-top:2px;
+    background:none;
   }
   .utilMenu>.menu li:nth-child(4){
     margin-right:8px;
@@ -364,7 +365,7 @@ export default {
   /* logo图片 */
   #headerMenu .logo{
     width:130px; 
-    
+    margin-top:10px;
   }
 
 
@@ -401,9 +402,13 @@ export default {
     margin-left:25px;
   }
   .QMButtom li {
-    border-right:1px solid #666666;
     margin-top:-5px;
+    background:url('../../public/img/bar_1x9_666666.gif')no-repeat left center;
   }
+  .QMButtom li:first-child{
+    background:none;
+  }
+
   .QMButtom li a{
     font-size:11px;
     color:#666666;
@@ -421,6 +426,7 @@ export default {
   .quickMenu .search{
     width:400px;
     height:40px;
+    margin-top:3px;
     background:url('../../public/img/BG_search_170717.png')no-repeat;
     
   }
@@ -441,7 +447,7 @@ export default {
   .headerAd{
     float:right;
     cursor:pointer;
-    margin-top:-60px;
+    margin-top:-70px;
   }
 
 
@@ -462,37 +468,66 @@ export default {
     float: left;
     position: absolute;
     display:block;
-    clear:both;
     left:135px;
-    top:8px;
+    top:0;
   }
   .totalMenu .quickShopping .totalList>li{
     height:40px;
     float: left;
     list-style:none;
-    /*border-right:1px solid #666666;*/
-    
+    z-index:10;
   }
-  .totalMenu .quickShopping .totalList>li>a{
-    color:#fff;
-    margin:25px;
-    text-decoration:none;
+/*  
+  .totalMenu .quickShopping .totalList li>a{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    height: 40px;
   }
-
+*/
+  .totalMenu .quickShopping .totalList .gnb_menu1{
+    background:url('../../public/img/gnb_menu1.png')no-repeat 0 0;
+    width:116px;
+  }
+  .totalMenu .quickShopping .totalList .gnb_menu2{
+    background:url('../../public/img/gnb_menu2.png')no-repeat 0 0;
+    width:132px;
+  }
+  .totalMenu .quickShopping .totalList .gnb_menu3{
+    background:url('../../public/img/gnb_menu3.png')no-repeat 0 0;
+    width:83px;
+  }
+  .totalMenu .quickShopping .totalList .gnb_menu4{
+    background:url('../../public/img/gnb_menu4.png')no-repeat 0 0;
+    width:82px;
+  }
+  .totalMenu .quickShopping .totalList .gnb_menu5{
+    background:url('../../public/img/gnb_menu5.png')no-repeat 0 0;
+    width:85px;
+  }
+  .totalMenu .quickShopping .totalList li:hover{
+    background-position:0 -40px;
+    cursor:pointer;
+  }
 
    /* 快捷菜单hover触发div  */
   .BtotalMenu .totalList li>div{
     display:none;
     background:#fff;
     position:absolute;
-    top:32px;
-    z-index:10;
+    top:39px;
+    z-index:1;
     margin:0;
   }
   .BtotalMenu .totalList li:hover>div{
     display:block;
-    border:1px solid #000;
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
   }
+
+
  .BtotalMenu .totalList li div ul>li{
     list-style:none;
     width:176px;

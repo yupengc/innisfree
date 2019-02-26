@@ -6,7 +6,6 @@
       <router-link to="/about">About</router-link>  
     -->
     </div>
-    <my-headee></my-headee>
     <router-view></router-view>
   </div>
 </template>
