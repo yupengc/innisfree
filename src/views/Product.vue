@@ -162,18 +162,16 @@
   }
 
   /*  */
-  .typeCate .list > li{
-    width:81px;
-    height:114px;
-  } 
+
   .typeCate .list {
     overflow:hidden;
     position:relative;
-    width:100%;
-    height:144px;
+    width:980px;
+    height:159px;
     padding-top:15px;
+    margin-bottom:0px;
   }
-  .typeCate .list li {
+  .typeCate .list > li {
     float:left;
     width:80.6px;
     height:114px;
@@ -230,7 +228,7 @@
     width:100%;
     height:30px;
     position:absolute;
-
+    top:130px;
   }
   .typeCate .list li .category_sub ul{
     width:100%;
@@ -238,4 +236,5 @@
     border-top:1px solid #dddde1;
     border-bottom:1px solid #bebebe;
   }
+  
 </style>
