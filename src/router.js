@@ -8,7 +8,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path: '/',name: 'index',component: Index},
-    {path: '/index',name: 'index',component: Index},
+    // {path: '/index',name: 'index',component: Index},
     {path:'/login',name:'login',component: Login},
     {path:'/product',name:'product',component: Product}
   ]

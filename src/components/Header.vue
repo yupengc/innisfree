@@ -253,10 +253,10 @@
             <div class="loginArea">
               <form class="loginFrm">
                 <span class="loginId">
-                  <input type="text" id="id"  placeholder="   邮箱/手机">
+                  <input type="text" id="id"  autocomplete="username" placeholder="   邮箱/手机">
                 </span>
                 <span class="loginPwd">
-                  <input type="password" id="pwd"  placeholder="   密码" >
+                  <input type="password" id="pwd" autocomplete="current-password" placeholder="   密码" >
                 </span>
                 <span>
                   <a href="javascript:;" class="login" alt="登录">
